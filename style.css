@@ -149,3 +149,55 @@ i {
     padding: 2px 5px;
     border: ;
 }
+
+
+
+
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 85%;
+    }
+
+    .players, .blogs, .courses{
+    
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player, .blogs, .courses{
+        flex-direction: column;
+    }
+
+    .course{
+        margin: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+
+    .players, .blogs, .courses{
+    
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,  .courses{
+        flex-direction: column;
+        
+    }
+
+    .blogs{
+        flex-direction: column;
+        margin-left: 100px;
+    }
+
+    .course{
+        /* margin: 30px;
+        padding: 10px; */
+        text-align: center;
+    }
+}
